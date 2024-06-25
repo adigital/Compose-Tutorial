@@ -1,5 +1,7 @@
 package ru.adigital.composetutorial
 
+import ru.adigital.composetutorial.ui.Message
+
 /**
  * SampleData for Jetpack Compose Tutorial
  */

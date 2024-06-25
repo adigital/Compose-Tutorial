@@ -1,4 +1,4 @@
-// https://apptractor.ru/info/articles/pobochnye-effekty-jetpack-compose-v-podrobnostyah.html?noamp=mobile
+package ru.adigital.composetutorial.ui// https://apptractor.ru/info/articles/pobochnye-effekty-jetpack-compose-v-podrobnostyah.html?noamp=mobile
 
 import android.util.Log
 import androidx.compose.foundation.layout.Arrangement

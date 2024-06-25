@@ -1,4 +1,4 @@
-package ru.adigital.composetutorial
+package ru.adigital.composetutorial.ui
 
 import android.content.res.Configuration
 import androidx.compose.animation.animateColorAsState
@@ -29,6 +29,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import ru.adigital.composetutorial.R
+import ru.adigital.composetutorial.SampleData
 import ru.adigital.composetutorial.ui.theme.ComposeTutorialTheme
 
 @Composable

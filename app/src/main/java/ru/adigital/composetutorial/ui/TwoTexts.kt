@@ -1,4 +1,4 @@
-package ru.adigital.composetutorial
+package ru.adigital.composetutorial.ui
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.IntrinsicSize
