@@ -11,6 +11,9 @@
       <SelectionState runConfigName="IndeterminateLinearIndicator">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="CheckboxParentExample">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>
