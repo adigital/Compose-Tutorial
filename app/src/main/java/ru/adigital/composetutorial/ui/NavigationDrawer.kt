@@ -1,4 +1,4 @@
-package ru.adigital.composetutorial
+package ru.adigital.composetutorial.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
