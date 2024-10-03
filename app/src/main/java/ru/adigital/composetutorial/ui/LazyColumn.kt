@@ -6,9 +6,11 @@ import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -26,6 +28,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawWithContent
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -35,9 +43,38 @@ import ru.adigital.composetutorial.ui.theme.ComposeTutorialTheme
 
 @Composable
 fun Conversation(messages: List<Message>) {
-    LazyColumn {
-        items(messages) { message ->
-            MessageCard(message)
+    var pointerOffset by remember {
+        mutableStateOf(Offset(0f, 0f))
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .pointerInput("dragging") {
+                detectDragGestures { _, dragAmount ->
+                    pointerOffset += dragAmount
+                }
+            }
+            .onSizeChanged {
+                pointerOffset = Offset(it.width / 2f, it.height / 2f)
+            }
+            .drawWithContent {
+                drawContent()
+                // draws a fully black area with a small keyhole at pointerOffset that’ll show part of the UI.
+                drawRect(
+                    Brush.radialGradient(
+                        listOf(Color.Transparent, Color.Black),
+                        center = pointerOffset,
+                        radius = 100.dp.toPx(),
+                    )
+                )
+            }
+    ) {
+
+        LazyColumn {
+            items(messages) { message ->
+                MessageCard(message)
+            }
         }
     }
 }
@@ -61,6 +98,7 @@ fun MessageCard(msg: Message) {
         // surfaceColor will be updated gradually from one color to the other
         val surfaceColor by animateColorAsState(
             if (isExpanded) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.surface,
+            label = "",
         )
 
         // We toggle the isExpanded variable when we click on this Column
