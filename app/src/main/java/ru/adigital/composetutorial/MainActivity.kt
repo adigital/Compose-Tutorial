@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import ru.adigital.composetutorial.ui.Conversation
+import ru.adigital.composetutorial.ui.UnmatchedBoundsExample
 import ru.adigital.composetutorial.ui.theme.ComposeTutorialTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +20,12 @@ class MainActivity : ComponentActivity() {
             ComposeTutorialTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
 //                    MessageCard(Message("Android", "Jetpack Compose"))
-                    Conversation(SampleData.conversationSample)
+//                    Conversation(SampleData.conversationSample)
+//                    DialogExamples()
+//                    AnimatedContentWithoutAnySharedElementTransitions()
+//                    SharedElementTransitionBetweenTwoComposables()
+//                    SharedElementManualVisibleControl()
+                    UnmatchedBoundsExample()
                 }
             }
         }
