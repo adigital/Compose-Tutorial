@@ -4,22 +4,36 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-09-26T13:09:01.125464100Z">
+        <DropdownSelection timestamp="2024-12-04T10:21:28.545626800Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=D:\ANDROID_SDK_HOME\.android\avd\Pixel_8_API_34.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=D:\ANDROID_SDK_HOME\.android\avd\Medium_Phone_API_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="IndeterminateCircularIndicator">
+      <SelectionState runConfigName="SharedElement_Clipping">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="IndeterminateLinearIndicator">
+      <SelectionState runConfigName="SharedElement_SkipLookaheadSize">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="CheckboxParentExample">
+      <SelectionState runConfigName="PlaceholderSizeAnimated_Demo">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="SharedAsyncImage">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2024-12-05T14:57:09.569177300Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=D:\ANDROID_SDK_HOME\.android\avd\Medium_Phone_API_35.avd" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
+      </SelectionState>
+      <SelectionState runConfigName="SharedElementTypicalUseText">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

@@ -410,17 +410,17 @@ private fun DetailsContent3(
 // Общие элементы с AnimatedVisibility
 data class Snack(
     val name: String,
-    val name2: String,
+    val description: String,
     val image: Int
 )
 
-private val listSnacks = listOf(
-    Snack("Cupcake", "", R.drawable.profile_picture),
-    Snack("Donut", "", R.drawable.profile_picture),
-    Snack("Eclair", "", R.drawable.profile_picture),
-    Snack("Froyo", "", R.drawable.profile_picture),
-    Snack("Gingerbread", "", R.drawable.profile_picture),
-    Snack("Honeycomb", "", R.drawable.profile_picture),
+val listSnacks = listOf(
+    Snack("Cupcake", "Cupcake description", R.drawable.sample1),
+    Snack("Donut", "Donut description", R.drawable.sample2),
+    Snack("Eclair", "Eclair description", R.drawable.sample3),
+    Snack("Froyo", "Froyo description", R.drawable.sample4),
+    Snack("Gingerbread", "Gingerbread description", R.drawable.sample5),
+    Snack("Honeycomb", "Honeycomb description", R.drawable.sample6)
 )
 
 private val shapeForSharedElement = RoundedCornerShape(16.dp)
