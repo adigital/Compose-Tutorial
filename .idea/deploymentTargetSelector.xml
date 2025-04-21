@@ -13,19 +13,19 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="SharedElement_Clipping">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="SharedElement_SkipLookaheadSize">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="PlaceholderSizeAnimated_Demo">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SharedElementApp_BoundsTransformExample">
+      <SelectionState runConfigName="SharedElement_PredictiveBack">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SharedElement_PredictiveBack">
+      <SelectionState runConfigName="SharedElementPredictiveBack">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="ProgressIndicatorExamples">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
